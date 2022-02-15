@@ -1,0 +1,261 @@
+.form__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 80vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: flex;
+}
+
+.form__content-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.form__name {
+  display: flex;
+  position: absolute;
+  top: 1.6rem;
+}
+
+.form__logo {
+  margin-right: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.form__logo-text {
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.form__text {
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form__input {
+  margin-bottom: 2.2rem;
+  padding: 0.8rem;
+  border: 1px solid #222;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.form__error {
+  color: rgb(255, 38, 0);
+  position: absolute;
+  bottom: 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.02rem;
+}
+
+.form__btn {
+  display: block;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border: none;
+  background-color: #0247fe;
+  color: #ffffff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.1s ease;
+  width: 300px;
+  font-size: 1rem;
+}
+
+.form__btn:hover {
+  background-color: #0132bb;
+}
+
+.form__signin {
+  display: flex;
+  margin-top: 1.4rem;
+}
+
+.form__paragraph {
+  color: #222;
+}
+
+.form__signin-link {
+  padding-left: 0.4rem;
+  color: #222;
+  font-weight: bold;
+}
+
+.form__content-right {
+  position: relative;
+  background-color: #1a55f7;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__content-right h1 {
+  color: #ffffff;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+  padding-bottom: 2.4rem;
+  width: 50%;
+  padding-top: 8rem;
+}
+
+.form__content-right p {
+  color: #ffffff;
+  width: 60%;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+
+.form__content-right img {
+  position: absolute;
+  top: 1.4rem;
+}
+
+/* MEDIA QUERIES */
+
+/* large laptops and desktops (1200px and down) */
+@media only screen and (max-width: 1200px) {
+  .form__container {
+    width: 1000px;
+  }
+}
+
+/* laptops and desktops (992px and down) */
+@media only screen and (max-width: 992px) {
+  .form__container {
+    width: 800px;
+  }
+
+  .form__content-right img {
+    width: 180px;
+    height: 200px;
+  }
+
+  .form__content-right h1 {
+    padding-top: 6rem;
+    font-size: 2.8rem;
+  }
+}
+
+/* landscape tablets, 768px and down */
+@media only screen and (max-width: 768px) {
+  .form__container {
+    width: 600px;
+    flex-direction: column;
+    height: 90vh;
+  }
+
+  .form__content-left {
+    height: 200%;
+  }
+
+  .form__name {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .form__logo {
+    width: 14px;
+    height: 14px;
+    margin-top: 0.2rem;
+    margin-right: 0.2rem;
+  }
+
+  .form__logo-text {
+    font-size: 1rem;
+  }
+
+  .form__text {
+    margin-bottom: 1.4rem;
+    font-size: 1.6rem;
+  }
+
+  .form__content-right {
+    border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .form__content-right img {
+    width: 140px;
+    height: 180px;
+    top: 2.3rem;
+    left: 2rem;
+  }
+
+  .form__content-right h1 {
+    font-size: 2.4rem;
+    padding-left: 12rem;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .form__content-right p {
+    padding-left: 9rem;
+    width: 80%;
+  }
+}
+
+/* Small devices (600px and down) */
+@media only screen and (max-width: 600px) {
+  .form__container {
+    width: 400px;
+  }
+
+  .form__content-right img {
+    width: 100px;
+    height: 120px;
+    top: 1rem;
+    left: 3rem;
+  }
+
+  .form__content-right h1 {
+    font-size: 1.8rem;
+    padding-top: 1.6rem;
+    padding-left: 12rem;
+  }
+
+  .form__content-right p {
+    font-size: 1rem;
+    width: 100%;
+    padding-left: 1.2rem;
+  }
+
+  /* Extra small devices (390px and down) */
+  @media only screen and (max-width: 390px) {
+    .form__container {
+      width: 350px;
+    }
+
+    .form__content-right h1 {
+      padding-left: 11rem;
+    }
+
+    .form__content-right p {
+      padding-left: 1rem;
+    }
+  }
+}
