@@ -9,10 +9,6 @@ Therefore, it is very crucial to understand how to build one from start to finis
 **HTML5** <br/>
 **CSS3**
 # Screenshots
-All of the files are organized in their own folders. <br/>
-![files](https://user-images.githubusercontent.com/60958225/154351087-6e56565b-d81c-4b19-8106-1e746d10fab4.PNG)
-<br/>
-<br/>
 This is how the project looks without any validation <br/>
 ![form1](https://user-images.githubusercontent.com/60958225/154352265-b9e0fdeb-d0a8-4958-9735-7ac1d37fe7a1.PNG)
 <br/>
