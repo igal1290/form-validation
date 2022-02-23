@@ -1,5 +1,5 @@
 # form-validation 
-**View Project =>** https://https://form-validation-noden.netlify.app/
+**View Project =>** https://form-validation-noden.netlify.app/
 # About the Project
 Very simple, yet very important when it comes to frontend development.
 Frontend developers build and validate forms on a daily basis. 
