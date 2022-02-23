@@ -1,70 +1,55 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# form-validation 
+**View Project =>** https://igal1290.github.io/form-validation/
+# About the Project
+Very simple, yet very important when it comes to frontend development.
+Frontend developers build and validate forms on a daily basis. 
+Therefore, it is very crucial to understand how to build one from start to finish using frontend technologies like React, HTML5 and CSS3.
+# Technologies Used
+**React** <br/>
+**HTML5** <br/>
+**CSS3**
+# Screenshots
+All of the files are organized in their own folders. <br/>
+![files](https://user-images.githubusercontent.com/60958225/154351087-6e56565b-d81c-4b19-8106-1e746d10fab4.PNG)
+<br/>
+<br/>
+This is how the project looks without any validation <br/>
+![form1](https://user-images.githubusercontent.com/60958225/154352265-b9e0fdeb-d0a8-4958-9735-7ac1d37fe7a1.PNG)
+<br/>
+<br/>
+As soon as the sign up button is clicked without any input, we get an error saying that the fields are required in order to sign up. <br/>
+![form2](https://user-images.githubusercontent.com/60958225/154355907-0684e889-4fbe-4f55-9190-1e9fdb0cc35f.PNG)
+<br/>
+<br/>
+Here it shows us new errors stating that username and password must be between a specific amount of characters and the email must be a valid email. <br/>
+![form3](https://user-images.githubusercontent.com/60958225/154355963-8d4c9ccd-62b4-4266-89be-51f2dbad9ed7.PNG)
+<br/>
+<br/>
+If the password does not match the password confirmation, it will show an error stating that it doesn't match. <br/>
+![form4](https://user-images.githubusercontent.com/60958225/154355997-2d093529-2650-4683-8bda-9bd4d787e44a.PNG)
+<br/>
+<br/>
+We can navigate into the sign in page either by clicking on the sign in link at the bottom of the form, or when we successfully create an account, it automatically navigates us to the sign in page. <br/>
+![form5](https://user-images.githubusercontent.com/60958225/154356763-838708dc-ebc9-4b42-85b0-5ea6f98a2e4a.PNG)
+# Approach
+1. **React Router V6:** is used in order to navigate between two pages. The first page is the sign up page, which is also the homepage.
+The second page is the sign in page.
+2. **Custom Hooks:** I created a custom hook called **useForm** in order to keep all of the hooks and handle functions inside this file.
+This keeps our code very neat, clean and reusable. <br/>
+**The hooks and handle functions that were used**: <br/>
+- **useState:**
+There are 3 states that were used in this project. The first one is to manage our form values like the username, email and password.
+The second one is for the errors to store all of our error values inside an object.
+And the submitting state to toggle between submitting and not submitting when we submit the form on sign up.
+- **useNavigate:**
+The useNavigate hook was used inside the useEffect hook to navigate into the sign in page after the account is successfully created.
+- **useEffect:**
+The useEffect hook is a side effect to navigate into the sign in page if no errors were found and the account was successfully created.
+- **Handle Change:**
+The handleChange function lets us change the state of the value every time we type.
+- **Handle Submit:**
+The handleSubmit submits the form and checks if there are any errors.
+3. **Validation:**
+For the validation, I created a seperate JS file and inserted all of the logic inside a function called **formValidation**.
+The function takes in the values from our custom hook and intializes a new object called errors. Each time the condition is false, the error values is being inserted into the errors object.
+The function returns the errors as an object.
