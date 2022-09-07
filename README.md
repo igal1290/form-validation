@@ -3,7 +3,7 @@
 # About the Project
 Very simple, yet very important when it comes to frontend development.
 Frontend developers build and validate forms on a daily basis. 
-Therefore, it is very crucial to understand how to build one from start to finish using frontend technologies like React, HTML5 and CSS3.
+Therefore, it is very crucial to understand how to build one from start to finish using frontend technologies like React, and CSS3.
 # Technologies Used
 **React** <br/>
 **CSS3**
