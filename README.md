@@ -6,7 +6,6 @@ Frontend developers build and validate forms on a daily basis.
 Therefore, it is very crucial to understand how to build one from start to finish using frontend technologies like React, HTML5 and CSS3.
 # Technologies Used
 **React** <br/>
-**HTML5** <br/>
 **CSS3**
 # Screenshots
 This is how the project looks without any validation <br/>
